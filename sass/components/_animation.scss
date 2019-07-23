@@ -1,0 +1,118 @@
+.home {
+  .slogan {
+    h1 {
+      transform: translateX(-350px);
+      opacity: 0;
+
+      &.text-from-left {
+        transform: translateX(0);
+        opacity: 1;
+        transition: .5s ease-in-out;
+      }
+    }
+  }
+
+  .action {
+    transform: translateX(-350px);
+    opacity: 0;
+
+    &.action-from-bottom {
+      transform: translateY(0);
+      opacity: 1;
+      transition: .5s ease-in-out;
+    }
+  }
+
+  .home-img {
+    transform: scale(0);
+    opacity: 0;
+
+    &.home-from-zero {
+      transform: scale(1);
+      opacity: 1;
+      transition: .5s ease-in-out;
+    }
+  }
+}
+
+.about {
+  .about-me {
+    transform: translateY(-400px);
+    opacity: 0;
+
+    &.about-from-top {
+      transform: translateY(0);
+      opacity: 1;
+      transition: .5s ease-in-out;
+    }
+  }
+}
+
+.services {
+  .service-img {
+    transform: translateX(-550px);
+    opacity: 0;
+
+    &.service-from-left {
+      transform: translateX(0);
+      opacity: 1;
+      transition: .5s ease-in-out;
+    }
+  }
+
+  .col {
+    &:nth-of-type(1) {
+      .card {
+        transform: translateY(500px);
+        opacity: 0;
+
+        &.card-from-bottom {
+          transform: translateY(0);
+          opacity: 1;
+          transition: .5s ease-in-out;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      .card {
+        transform: translateY(500px);
+        opacity: 0;
+
+        &.card-from-bottom {
+          transform: translateY(0);
+          opacity: 1;
+          transition: .5s ease-in-out;
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      .card {
+        transform: translateY(500px);
+        opacity: 0;
+
+        &.card-from-bottom {
+          transform: translateY(0);
+          opacity: 1;
+          transition: .5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  .contact-list {
+    li {
+      transform: translateY(-200px);
+      opacity: 0;
+
+      &.list-from-top {
+        transform: translateY(0);
+        opacity: 1;
+        transition: .5s ease-in-out;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    width: 100%;
+    height: 424px;
+    background-image: url("../img/contact@2x.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+}
+
+.contact-list {
+  margin-top: 2rem;
+  position: absolute;
+  right: 50px;
+  width: 600px;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(135deg, nth($colors, 1), darken(nth($colors, 1), 10%));
+    box-shadow: 2px 2px 8px 0 rgba($color: nth($colors, 1), $alpha: .2);
+    height: 234.25px;
+    border-radius: 10px;
+    color: white;
+    @include grid(2, 5%);
+
+    i {
+      font-size: 75px;
+      margin-bottom: 25px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: darken(white, 5%);
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

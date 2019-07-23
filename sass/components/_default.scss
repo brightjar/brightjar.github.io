@@ -1,0 +1,25 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}

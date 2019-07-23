@@ -1,0 +1,27 @@
+.portofolio {
+  padding-top: 5rem;
+
+  .portofolio-title {
+    text-align: center;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+
+  .portofolio-body {
+    text-align: center;
+
+    li {
+      margin-top: 25px;
+    }
+
+    h5 {
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}

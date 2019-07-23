@@ -1,0 +1,26 @@
+.btn-main {
+  padding: 13px 40px;
+  background-color: nth($colors, 1);
+  color: white;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  box-shadow: 2px 2px 8px rgba($color: nth($colors, 1), $alpha: .3);
+  transition: .3s ease-in;
+
+  i {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    background-color: darken(nth($colors, 1), 10%);
+    color: white;
+    text-decoration: none;
+    transition: .3s ease-in;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
