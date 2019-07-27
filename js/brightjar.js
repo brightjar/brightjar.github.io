@@ -33,16 +33,6 @@ $(window).scroll(function () {
     $('.about .about-me').addClass('about-from-top');
   }
 
-  if (wScroll > $('#services').offset().top - 200) {
-    $('.services .service-img').addClass('service-from-left');
-    $('.services .main-card').addClass('card-from-bottom');
-    $('.services .card').each(function (i) {
-      setTimeout(function () {
-        $('.services .card').eq(i).addClass('card-from-bottom');
-      }, 200 * (i + 1));
-    });
-  }
-
   if (wScroll > $('#contact').offset().top - 200) {
     $('.contact-list li').each(function (i) {
       setTimeout(function () {

@@ -5,8 +5,13 @@
 
 .scrolled {
   background-color: white;
-  box-shadow: 0 1px 8px 0 rgba($color: nth($colors, 1), $alpha: .2);
+  box-shadow: 0 5px 10px 0 rgba($color: nth($colors, 1), $alpha: .1);
   transition: .3s ease-in-out;
+
+  .navbar-brand {
+    width: 100px;
+    transition: .3s ease-out;
+  }
 }
 
 .navbar-toggler {
@@ -15,6 +20,21 @@
   span {
     padding: 5px;
     color: nth($colors, 1);
+  }
+}
+
+.navbar-brand {
+  width: 150px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  transition: .3s ease-in;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
