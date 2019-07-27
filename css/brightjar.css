@@ -70,6 +70,15 @@ section {
   }
 }
 
+.modal {
+  padding-right: 0 !important;
+}
+
+.modal-dialog {
+  max-width: 100%;
+  margin: 0;
+}
+
 .home .slogan h1 {
   -webkit-transform: translateX(-350px);
           transform: translateX(-350px);
@@ -411,6 +420,22 @@ section {
   font-size: 13px;
 }
 
+.card .card-body .list-group .list-group-item .portofolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: #2196f8;
+  font-size: 15px;
+}
+
+.card .card-body .list-group .list-group-item .portofolio:hover {
+  color: #0561ae;
+}
+
 .card .card-body .list-group .list-group-item .name {
   float: left;
   color: #666666;
@@ -435,36 +460,24 @@ section {
   border-right: 0;
 }
 
+.card-main .list-group-item .portofolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: white !important;
+  font-size: 15px;
+}
+
+.card-main .list-group-item .portofolio:hover {
+  color: #e6e6e6 !important;
+}
+
 .card-main .list-group-item .name {
   color: #f2f2f2 !important;
-}
-
-.portofolio {
-  padding-top: 4rem;
-}
-
-.portofolio .portofolio-title {
-  text-align: center;
-}
-
-.portofolio .portofolio-title h1 {
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.portofolio .portofolio-body {
-  text-align: center;
-}
-
-.portofolio .portofolio-body li {
-  margin-top: 25px;
-}
-
-.portofolio .portofolio-body h5 {
-  margin-top: 5px;
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .contact {
@@ -574,12 +587,6 @@ section {
   .services .card {
     width: 95%;
   }
-  .portofolio {
-    padding-top: 7rem;
-  }
-  .portofolio .portofolio-body li {
-    margin-top: 50px;
-  }
   .contact {
     padding-top: 5rem;
   }
@@ -619,9 +626,6 @@ section {
   }
   .services .row .col-lg-3 {
     padding-left: 2rem;
-  }
-  .portofolio {
-    padding-top: 5rem;
   }
   .contact {
     display: -webkit-box;
@@ -666,24 +670,6 @@ section {
     position: absolute;
     opacity: 0.3;
     z-index: -1;
-  }
-  #portofolio {
-    height: auto;
-  }
-  #portofolio .col-sm-6 {
-    margin-bottom: 30px;
-  }
-  #portofolio .portofolio-body ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #portofolio .portofolio-img {
-    width: 150px;
-    height: auto;
   }
 }
 /*# sourceMappingURL=brightjar.css.map */
