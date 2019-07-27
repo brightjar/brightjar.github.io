@@ -41,3 +41,8 @@ $(window).scroll(function () {
     });
   }
 });
+
+// Tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
