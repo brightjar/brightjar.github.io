@@ -141,3 +141,42 @@
     }
   }
 }
+
+@media(max-width: 575.98px) {
+  #home {
+    height: 70vh;
+
+    .home {
+      height: 100%;
+      margin-top: 50px;
+      text-align: center;
+
+      .slogan {
+        h1 {
+          font-size: 50px;
+        }
+      }
+
+      .col-sm-7 {
+        position: absolute;
+        opacity: 0.3;
+        z-index: -1;
+      }
+    }
+  }
+
+  #portofolio {
+    height: auto;
+
+    .col-sm-6 {
+      margin-bottom: 30px;
+    }
+
+    .portofolio-body {
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

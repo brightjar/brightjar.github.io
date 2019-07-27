@@ -62,6 +62,14 @@ section {
   }
 }
 
+@media (max-width: 575.98px) {
+  .btn-main {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 35px;
+  }
+}
+
 .home .slogan h1 {
   -webkit-transform: translateX(-350px);
           transform: translateX(-350px);
@@ -636,6 +644,39 @@ section {
   }
   .contact .contact-list li a {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #home {
+    height: 70vh;
+  }
+  #home .home {
+    height: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  #home .home .slogan h1 {
+    font-size: 50px;
+  }
+  #home .home .col-sm-7 {
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  #portofolio {
+    height: auto;
+  }
+  #portofolio .col-sm-6 {
+    margin-bottom: 30px;
+  }
+  #portofolio .portofolio-body ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=brightjar.css.map */
