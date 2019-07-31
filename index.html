@@ -7,13 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BrightJar Creative</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/bootstrap-4/css/bootstrap.css">
   <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
   <link rel="stylesheet" href="css/brightjar.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
@@ -45,7 +44,7 @@
             <h1 class="display-4">With us</h1>
           </div>
           <div class="action">
-            <a href="#about" class="btn-main">Learn more <i class="fas fa-chevron-right"></i></a>
+            <a href="#about" class="btn-main">See BrightJar <i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-7">
@@ -79,174 +78,457 @@
 
   <section class="container-fluid" id="services">
     <div class="services">
-      <div class="row justify-content-end align-items-center pt-3">
-        <div class="col-lg-3 col-md-4 pl-lg-0">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title">Basic</h4>
-              <h1 class="card-price"><span>Rp.</span>25</h1>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <span class="portofolio" data-toggle="modal" data-target="#BasicModal">Lihat Portofolio</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Pilihan Konsep Desain</span>
-                  <span class="status">5</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Variasi Desain</span>
-                  <span class="status">1</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Revisi Desain</span>
-                  <span class="status" data-toggle="tooltip" data-replacement="top" title="Selama 3 hari">Tanpa
-                    Batas</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Bantuan Prioritas</span>
-                  <span class="status"><i class="fas fa-times"></i></span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Master File Desain</span>
-                  <span class="status"><i class="fas fa-check"></i></span>
-                </li>
-              </ul>
-            </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="nav nav-pills mt-5 justify-content-center" id="myPill" role="tablist">
+            <a class="nav-item nav-link active" id="design-tab" data-toggle="pill" href="#design" role="pill"
+              aria-controls="design" aria-selected="true">Design</a>
+            <a class="nav-item nav-link" id="website-tab" data-toggle="pill" href="#website" role="pill"
+              aria-controls="website" aria-selected="false">Website</a>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 pl-lg-0">
-          <div class="card card-main">
-            <div class="card-header">
-              <h4 class="card-title">Professional</h4>
-              <h1 class="card-price"><span>Rp.</span>35</h1>
+        <div class="col-lg-9">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="design" role="tabpanel" aria-labelledby="design-tab">
+              <div class="row justify-content-end align-items-center pt-4">
+                <div class="col-lg-4 col-md-4 pl-lg-0">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Basic</h4>
+                      <h1 class="card-price"><span>IDR</span>1<small>.000.000</small></h1>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="portofolio" data-toggle="modal" data-target="#DesignModal">Lihat
+                            Portofolio</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Konsep Desain</span>
+                          <span class="status">5</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Variasi Desain</span>
+                          <span class="status">1</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Revisi Desain</span>
+                          <span class="status" data-toggle="tooltip" data-replacement="top" title="Selama 3 hari">Tanpa
+                            Batas</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Bantuan Prioritas</span>
+                          <span class="status"><i class="fas fa-times"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Master File Desain</span>
+                          <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 pl-lg-0">
+                  <div class="card card-main">
+                    <div class="card-header">
+                      <h4 class="card-title">Professional</h4>
+                      <h1 class="card-price"><span>IDR</span>2<small>.000.000</small></h1>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="portofolio" data-toggle="modal" data-target="#DesignModal">Lihat
+                            Portofolio</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Konsep Desain</span>
+                          <span class="status">15</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Variasi Desain</span>
+                          <span class="status">2</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Revisi Desain</span>
+                          <span class="status" data-toggle="tooltip" data-replacement="top" title="Selama 5 hari">Tanpa
+                            Batas</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Bantuan Prioritas</span>
+                          <span class="status"><i class="fas fa-times"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Master File Desain</span>
+                          <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 pl-lg-0">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Expert</h4>
+                      <h1 class="card-price"><span>IDR</span>3<small>.000.000</small></h1>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="portofolio" data-toggle="modal" data-target="#DesignModal">Lihat
+                            Portofolio</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Konsep Desain</span>
+                          <span class="status">25</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Variasi Desain</span>
+                          <span class="status">3</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Revisi Desain</span>
+                          <span class="status" data-toggle="tooltip" data-replacement="top" title="Selama 7 hari">Tanpa
+                            Batas</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Bantuan Prioritas</span>
+                          <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Master File Desain</span>
+                          <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="DesignModal" tabindex="-1" role="dialog" aria-labelledby="DesignModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="DesignModalLabel">Portofolio Desain</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="portofolio-desain">
+                        <div class="nav nav-pills" id="v-pills-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="basic-tab" data-toggle="pill" href="#basic" role="tab"
+                            aria-controls="basic" aria-selected="true">Basic</a>
+                          <a class="nav-item nav-link" id="professional-tab" data-toggle="pill" href="#professional"
+                            role="tab" aria-controls="professional" aria-selected="false">Professional</a>
+                          <a class="nav-item nav-link" id="expert-tab" data-toggle="pill" href="#expert" role="tab"
+                            aria-controls="expert" aria-selected="false">Expert</a>
+                        </div>
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+                            <div class="package-basic">
+                              <ul>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="professional" role="tabpanel"
+                            aria-labelledby="professional-tab">
+                            <div class="package-professional">
+                              <ul>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="expert" role="tabpanel" aria-labelledby="expert-tab">
+                            <div class="package-expert">
+                              <ul>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <span class="portofolio" data-toggle="modal" data-target="#ProfessionalModal">Lihat Portofolio</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Pilihan Konsep Desain</span>
-                  <span class="status">15</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Variasi Desain</span>
-                  <span class="status">2</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Revisi Desain</span>
-                  <span class="status" data-toggle="tooltip" data-replacement="top" title="Selama 5 hari">Tanpa
-                    Batas</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Bantuan Prioritas</span>
-                  <span class="status"><i class="fas fa-times"></i></span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Master File Desain</span>
-                  <span class="status"><i class="fas fa-check"></i></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 pl-lg-0">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title">Expert</h4>
-              <h1 class="card-price"><span>Rp.</span>75</h1>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <span class="portofolio" data-toggle="modal" data-target="#ExpertModal">Lihat Portofolio</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Pilihan Konsep Desain</span>
-                  <span class="status">25</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Variasi Desain</span>
-                  <span class="status">3</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Revisi Desain</span>
-                  <span class="status" data-toggle="tooltip" data-replacement="top" title="Selama 7 hari">Tanpa
-                    Batas</span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Bantuan Prioritas</span>
-                  <span class="status"><i class="fas fa-check"></i></span>
-                </li>
-                <li class="list-group-item">
-                  <span class="name">Master File Desain</span>
-                  <span class="status"><i class="fas fa-check"></i></span>
-                </li>
-              </ul>
+            <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
+              <div class="row justify-content-end align-items-center pt-4">
+                <div class="col-lg-4 col-md-4 pl-lg-0">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Basic</h4>
+                      <h1 class="card-price"><span>IDR</span>1<small>.000.000</small></h1>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="portofolio" data-toggle="modal" data-target="#WebsiteModal">Lihat
+                            Portofolio</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Konsep Desain</span>
+                          <span class="status">5</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Variasi Desain</span>
+                          <span class="status">1</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Revisi Desain</span>
+                          <span class="status" data-toggle="tooltip" data-replacement="top" title="Selama 3 hari">Tanpa
+                            Batas</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Bantuan Prioritas</span>
+                          <span class="status"><i class="fas fa-times"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Master File Desain</span>
+                          <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 pl-lg-0">
+                  <div class="card card-main">
+                    <div class="card-header">
+                      <h4 class="card-title">Professional</h4>
+                      <h1 class="card-price"><span>IDR</span>2<small>.000.000</small></h1>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="portofolio" data-toggle="modal" data-target="#WebsiteModal">Lihat
+                            Portofolio</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Konsep Desain</span>
+                          <span class="status">15</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Variasi Desain</span>
+                          <span class="status">2</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Revisi Desain</span>
+                          <span class="status" data-toggle="tooltip" data-replacement="top" title="Selama 5 hari">Tanpa
+                            Batas</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Bantuan Prioritas</span>
+                          <span class="status"><i class="fas fa-times"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Master File Desain</span>
+                          <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 pl-lg-0">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Expert</h4>
+                      <h1 class="card-price"><span>IDR</span>3<small>.000.000</small></h1>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="portofolio" data-toggle="modal" data-target="#WebsiteModal">Lihat
+                            Portofolio</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Konsep Desain</span>
+                          <span class="status">25</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Variasi Desain</span>
+                          <span class="status">3</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Revisi Desain</span>
+                          <span class="status" data-toggle="tooltip" data-replacement="top" title="Selama 7 hari">Tanpa
+                            Batas</span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Bantuan Prioritas</span>
+                          <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="name">Master File Desain</span>
+                          <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="WebsiteModal" tabindex="-1" role="dialog" aria-labelledby="WebsiteModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="WebsiteModalLabel">Portofolio Website</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="portofolio-website">
+                        <div class="nav nav-pills" id="v-pills-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="basic-tab" data-toggle="pill" href="#basic" role="tab"
+                            aria-controls="basic" aria-selected="true">Basic</a>
+                          <a class="nav-item nav-link" id="professional-tab" data-toggle="pill" href="#professional"
+                            role="tab" aria-controls="professional" aria-selected="false">Professional</a>
+                          <a class="nav-item nav-link" id="expert-tab" data-toggle="pill" href="#expert" role="tab"
+                            aria-controls="expert" aria-selected="false">Expert</a>
+                        </div>
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+                            <div class="package-basic">
+                              <ul>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="professional" role="tabpanel"
+                            aria-labelledby="professional-tab">
+                            <div class="package-professional">
+                              <ul>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="expert" role="tabpanel" aria-labelledby="expert-tab">
+                            <div class="package-expert">
+                              <ul>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                                <li>
+                                  <img src="img/300x300.png" alt="">
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="BasicModal" tabindex="-1" role="dialog" aria-labelledby="BasicModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="BasicModalLabel">Portofolio Paket Basic Desain</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="ProfessionalModal" tabindex="-1" role="dialog" aria-labelledby="ProfessionalModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="ProfessionalModalLabel">Portofolio Paket Basic Desain</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="ExpertModal" tabindex="-1" role="dialog" aria-labelledby="ExpertModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="ExpertModalLabel">Portofolio Paket Basic Desain</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
   </section>
 
   <section class="container-fluid" id="contact">
@@ -281,15 +563,9 @@
   </section>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+  <script src="vendor/core/jquery.3.2.1.min.js"></script>
+  <script src="vendor/core/popper.min.js"></script>
+  <script src="vendor/bootstrap-4/js/bootstrap.js"></script>
   <script src="js/brightjar.js"></script>
 
 </body>

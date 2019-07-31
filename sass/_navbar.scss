@@ -4,6 +4,7 @@
 }
 
 .scrolled {
+  padding: .75rem;
   background-color: white;
   box-shadow: 0 5px 10px 0 rgba($color: nth($colors, 1), $alpha: .1);
   transition: .3s ease-in-out;

@@ -156,6 +156,7 @@ section {
 }
 
 .scrolled {
+  padding: .75rem;
   background-color: white;
   -webkit-box-shadow: 0 5px 10px 0 rgba(33, 150, 248, 0.1);
           box-shadow: 0 5px 10px 0 rgba(33, 150, 248, 0.1);
@@ -342,7 +343,7 @@ section {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 .about .about-me {
@@ -375,7 +376,7 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 .card {
@@ -399,16 +400,24 @@ section {
 }
 
 .card .card-header .card-price {
-  font-weight: 400;
   margin-bottom: 0;
-  font-size: 3rem;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
 }
 
 .card .card-header .card-price span {
   position: relative;
-  top: -20px;
-  right: 2px;
+  right: 7px;
   font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card .card-header .card-price small {
+  position: relative;
+  left: 0;
+  font-size: 35px;
+  font-weight: 300;
 }
 
 .card .card-body .list-group {
@@ -477,7 +486,25 @@ section {
 }
 
 .card-main .list-group-item .name {
-  color: #f2f2f2 !important;
+  color: #f7f7f7 !important;
+}
+
+.package-basic,
+.package-professional,
+.package-expert {
+  margin-top: 3rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #2196f8;
+}
+
+.nav-pills .nav-link a {
+  color: #2196f8 !important;
+}
+
+.nav-pills .nav-link a:hover {
+  color: #077ddf !important;
 }
 
 .contact {
@@ -499,7 +526,7 @@ section {
 }
 
 .contact-list {
-  margin-top: 2rem;
+  margin-top: 1rem;
   position: absolute;
   right: 50px;
   width: 600px;
@@ -527,7 +554,7 @@ section {
   border-radius: 10px;
   color: white;
   float: left;
-  margin-bottom: 2.5%;
+  margin-bottom: 5%;
   margin-right: 5%;
   width: 47.5%;
 }
@@ -556,17 +583,24 @@ section {
 
 @media (min-width: 992px) {
   .navbar {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030;
   }
-  .home .row {
-    margin-top: 15rem;
+  #home {
+    margin-top: -100px;
+  }
+  .home {
+    padding-top: 17rem;
   }
   .slogan h1 {
     font-size: 80px;
+  }
+  #about {
+    margin-top: 23px;
   }
   .about::before {
     background-image: url("../img/about@2x.png");
@@ -583,6 +617,39 @@ section {
     height: 424px;
     background-image: url("../img/service@2x.png");
     background-repeat: no-repeat;
+  }
+  .services .portofolio-desain,
+  .services .portofolio-website {
+    padding: 0 50px;
+  }
+  .services .portofolio-desain ul li,
+  .services .portofolio-website ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 4%;
+    margin-right: 4%;
+    width: 30.66667%;
+    height: 300px;
+  }
+  .services .portofolio-desain ul li:nth-child(3n),
+  .services .portofolio-website ul li:nth-child(3n) {
+    margin-right: 0;
+  }
+  .services .portofolio-desain ul li img,
+  .services .portofolio-website ul li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
   }
   .services .card {
     width: 95%;
@@ -627,6 +694,39 @@ section {
   .services .row .col-lg-3 {
     padding-left: 2rem;
   }
+  .portofolio-desain,
+  .portofolio-website {
+    padding: 0 50px;
+  }
+  .portofolio-desain ul li,
+  .portofolio-website ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 4%;
+    margin-right: 4%;
+    width: 48%;
+    height: 300px;
+  }
+  .portofolio-desain ul li:nth-child(2n),
+  .portofolio-website ul li:nth-child(2n) {
+    margin-right: 0;
+  }
+  .portofolio-desain ul li img,
+  .portofolio-website ul li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -670,6 +770,39 @@ section {
     position: absolute;
     opacity: 0.3;
     z-index: -1;
+  }
+  .portofolio-desain,
+  .portofolio-website {
+    padding: 0 50px;
+  }
+  .portofolio-desain ul li,
+  .portofolio-website ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    width: 100%;
+    height: 300px;
+  }
+  .portofolio-desain ul li:nth-child(1n),
+  .portofolio-website ul li:nth-child(1n) {
+    margin-right: 0;
+  }
+  .portofolio-desain ul li img,
+  .portofolio-website ul li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 /*# sourceMappingURL=brightjar.css.map */
