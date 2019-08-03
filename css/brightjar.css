@@ -823,6 +823,9 @@ section {
   .services .row .col-lg-3 {
     padding-left: 2rem;
   }
+  .card-full {
+    margin-left: 0;
+  }
   .portofolio-desain,
   .portofolio-website {
     padding: 0 50px;
