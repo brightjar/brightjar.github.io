@@ -74,9 +74,212 @@ section {
   padding-right: 0 !important;
 }
 
-.modal-dialog {
+.modal-portofolio .modal-dialog {
   max-width: 100%;
   margin: 0;
+}
+
+.modal-full-portofolio .modal-body .close {
+  position: relative;
+  z-index: 1;
+}
+
+.modal-full-portofolio .row {
+  margin: 0;
+}
+
+.modal-full-portofolio .row .col {
+  padding: 0;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: 0;
+  -webkit-box-shadow: 2px 6px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 6px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card .card-header {
+  background-color: transparent;
+  text-align: center;
+  padding: 30px 50px;
+  border-bottom: 0;
+}
+
+.card .card-header .card-title {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.card .card-header .card-price {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.card .card-header .card-price span {
+  position: relative;
+  right: 7px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card .card-header .card-price small {
+  position: relative;
+  left: 0;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.card .card-body {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.card .card-body .list-group {
+  padding: 0 .5rem;
+}
+
+.card .card-body .list-group .list-group-item {
+  padding: 0.75rem 0;
+  font-size: 13px;
+}
+
+.card .card-body .list-group .list-group-item .portofolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: #2196f8;
+  font-size: 15px;
+}
+
+.card .card-body .list-group .list-group-item .portofolio:hover {
+  color: #0561ae;
+}
+
+.card .card-body .list-group .list-group-item .name {
+  float: left;
+  color: #666666;
+  font-weight: 300;
+}
+
+.card .card-body .list-group .list-group-item .status {
+  float: right;
+  font-weight: 500;
+}
+
+.card .card-body .list-group .list-group-item:last-child {
+  text-align: center;
+}
+
+.card .card-body .list-group .list-group-item:last-child:hover {
+  text-decoration: underline;
+}
+
+.card .card-body .list-group .list-group-item:last-child .full-portofolio {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.card .card-body .list-group .list-group-item:last-child .full-portofolio i {
+  margin-left: 5px;
+}
+
+.card-main {
+  background-color: #2196f8;
+  color: white;
+  padding: 30px 0;
+}
+
+.card-main .card-body {
+  padding: 0 1.25rem;
+}
+
+.card-main .card-body .list-group-item {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-left: 0;
+  border-right: 0;
+}
+
+.card-main .card-body .list-group-item .portofolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: white !important;
+  font-size: 15px;
+}
+
+.card-main .card-body .list-group-item .portofolio:hover {
+  color: #e6e6e6 !important;
+}
+
+.card-main .card-body .list-group-item .name {
+  color: #f7f7f7 !important;
+}
+
+.card-full {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  width: 100% !important;
+}
+
+.card-full.show {
+  position: absolute;
+  top: 0;
+}
+
+.card-full .card-header .card-title {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.card-full .card-body .list-group {
+  padding: 0;
+}
+
+.card-full .card-body .list-group .list-group-item:last-child {
+  padding-top: 20px;
+}
+
+.card-full .card-body .list-group .list-group-item:last-child:hover {
+  text-decoration: none;
+}
+
+.card-full .card-body .list-group .list-group-item:last-child ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+  float: left;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  width: 30%;
+}
+
+.card-full .card-body .list-group .list-group-item:last-child ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card-full .card-body .list-group .list-group-item:last-child ul li i {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .home .slogan h1 {
@@ -379,114 +582,39 @@ section {
   padding-top: 4rem;
 }
 
-.card {
-  margin-bottom: 30px;
-  border: 0;
-  -webkit-box-shadow: 2px 6px 15px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 2px 6px 15px 0 rgba(0, 0, 0, 0.15);
+.full-portofolio-card {
+  height: 650px;
+  overflow: hidden;
 }
 
-.card .card-header {
-  background-color: transparent;
-  text-align: center;
-  padding: 30px 50px;
-  border-bottom: 0;
-}
-
-.card .card-header .card-title {
-  font-weight: 400;
-  font-size: 20px;
-  margin-bottom: 1rem;
-}
-
-.card .card-header .card-price {
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 40px;
-  text-align: center;
-}
-
-.card .card-header .card-price span {
-  position: relative;
-  right: 7px;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.card .card-header .card-price small {
-  position: relative;
+.menu {
+  position: absolute;
+  top: 50%;
   left: 0;
-  font-size: 35px;
-  font-weight: 300;
-}
-
-.card .card-body .list-group {
-  padding: 0 .5rem;
-}
-
-.card .card-body .list-group .list-group-item {
-  padding: 0.75rem 0;
-  font-size: 13px;
-}
-
-.card .card-body .list-group .list-group-item .portofolio {
+  height: 50px;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu .menu-carousel {
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+  border: 1px solid #2196f8;
   cursor: pointer;
-  color: #2196f8;
-  font-size: 15px;
 }
 
-.card .card-body .list-group .list-group-item .portofolio:hover {
-  color: #0561ae;
-}
-
-.card .card-body .list-group .list-group-item .name {
-  float: left;
-  color: #666666;
-  font-weight: 300;
-}
-
-.card .card-body .list-group .list-group-item .status {
-  float: right;
-  font-weight: 500;
-}
-
-.card-main {
+.menu .menu-carousel.active {
   background-color: #2196f8;
-  color: white;
-  padding: 30px 0;
-}
-
-.card-main .list-group-item {
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  border-left: 0;
-  border-right: 0;
-}
-
-.card-main .list-group-item .portofolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  color: white !important;
-  font-size: 15px;
-}
-
-.card-main .list-group-item .portofolio:hover {
-  color: #e6e6e6 !important;
-}
-
-.card-main .list-group-item .name {
-  color: #f7f7f7 !important;
 }
 
 .package-basic,
@@ -530,6 +658,7 @@ section {
   position: absolute;
   right: 50px;
   width: 600px;
+  z-index: -1;
 }
 
 .contact-list li {

@@ -21,6 +21,16 @@ $(document).ready(function () {
     }, 450 * 4);
   });
 
+  $('.menu .menu-carousel').click(function () {
+    var href_id = $(this).attr('data-menu');
+
+    $('.menu .menu-carousel').removeClass('active');
+    $('.card-full').removeClass('show');
+
+    $(this).addClass('active');
+    $('.card-full' + "#" + href_id).addClass('show');
+  });
+
 });
 
 $(window).scroll(function () {

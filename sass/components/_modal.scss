@@ -2,7 +2,26 @@
   padding-right: 0 !important;
 }
 
-.modal-dialog {
-  max-width: 100%;
-  margin: 0;
+.modal-portofolio {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.modal-full-portofolio {
+  .modal-body {
+    .close {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .row {
+    margin: 0;
+
+    .col {
+      padding: 0;
+    }
+  }
 }

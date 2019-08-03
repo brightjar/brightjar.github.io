@@ -7,8 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BrightJar Creative</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/bootstrap-4/css/bootstrap.css">
   <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
   <link rel="stylesheet" href="css/brightjar.css">
 </head>
@@ -96,7 +95,7 @@
                   <div class="card">
                     <div class="card-header">
                       <h4 class="card-title">Basic</h4>
-                      <h1 class="card-price"><span>IDR</span>1<small>.000.000</small></h1>
+                      <h1 class="card-price"><span>IDR</span><small>150.000</small></h1>
                     </div>
                     <div class="card-body">
                       <ul class="list-group list-group-flush">
@@ -118,12 +117,16 @@
                             Batas</span>
                         </li>
                         <li class="list-group-item">
-                          <span class="name">Bantuan Prioritas</span>
-                          <span class="status"><i class="fas fa-times"></i></span>
+                          <span class="name">Durasi Pengerjaan</span>
+                          <span class="status">7 Hari</span>
                         </li>
                         <li class="list-group-item">
                           <span class="name">Master File Desain</span>
                           <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="full-portofolio" data-toggle="modal" data-target="#FullDesignModal">Fitur
+                            Lainnya<i class="fas fa-chevron-circle-right"></i></span>
                         </li>
                       </ul>
                     </div>
@@ -133,7 +136,7 @@
                   <div class="card card-main">
                     <div class="card-header">
                       <h4 class="card-title">Professional</h4>
-                      <h1 class="card-price"><span>IDR</span>2<small>.000.000</small></h1>
+                      <h1 class="card-price"><span>IDR</span><small>300.000</small></h1>
                     </div>
                     <div class="card-body">
                       <ul class="list-group list-group-flush">
@@ -155,12 +158,16 @@
                             Batas</span>
                         </li>
                         <li class="list-group-item">
-                          <span class="name">Bantuan Prioritas</span>
-                          <span class="status"><i class="fas fa-times"></i></span>
+                          <span class="name">Durasi Pengerjaan</span>
+                          <span class="status">10 Hari</span>
                         </li>
                         <li class="list-group-item">
                           <span class="name">Master File Desain</span>
                           <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="full-portofolio" data-toggle="modal" data-target="#FullDesignModal">Fitur
+                            Lainnya<i class="fas fa-chevron-circle-right"></i></span>
                         </li>
                       </ul>
                     </div>
@@ -170,7 +177,7 @@
                   <div class="card">
                     <div class="card-header">
                       <h4 class="card-title">Expert</h4>
-                      <h1 class="card-price"><span>IDR</span>3<small>.000.000</small></h1>
+                      <h1 class="card-price"><span>IDR</span><small>500.000</small></h1>
                     </div>
                     <div class="card-body">
                       <ul class="list-group list-group-flush">
@@ -192,20 +199,24 @@
                             Batas</span>
                         </li>
                         <li class="list-group-item">
-                          <span class="name">Bantuan Prioritas</span>
-                          <span class="status"><i class="fas fa-check"></i></span>
+                          <span class="name">Durasi Pengerjaan</span>
+                          <span class="status">14 Hari</span>
                         </li>
                         <li class="list-group-item">
                           <span class="name">Master File Desain</span>
                           <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="full-portofolio" data-toggle="modal" data-target="#FullDesignModal">Fitur
+                            Lainnya<i class="fas fa-chevron-circle-right"></i></span>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal fade" id="DesignModal" tabindex="-1" role="dialog" aria-labelledby="DesignModalLabel"
-                aria-hidden="true">
+              <div class="modal modal-portofolio fade" id="DesignModal" tabindex="-1" role="dialog"
+                aria-labelledby="DesignModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -307,6 +318,227 @@
                   </div>
                 </div>
               </div>
+              <div class="modal modal-full-portofolio fade" id="FullDesignModal" tabindex="-1" role="dialog"
+                aria-labelledby="FullDesignModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="row">
+                        <div class="col">
+                          gambar
+                        </div>
+                        <div class="col">
+                          <div class="full-portofolio-card">
+                            <div class="menu">
+                              <a class="menu-carousel active" data-menu="basic"></a>
+                              <a class="menu-carousel" data-menu="professional"></a>
+                              <a class="menu-carousel" data-menu="expert"></a>
+                            </div>
+                            <div class="card card-full fade show" id="basic">
+                              <div class="card-header">
+                                <h1 class="card-title">Basic</h1>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <span class="name">Konsep Desain</span>
+                                    <span class="status">5</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Variasi Desain</span>
+                                    <span class="status">1</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Revisi Desain</span>
+                                    <span class="status" data-toggle="tooltip" data-replacement="top"
+                                      title="Selama 3 hari">Tanpa
+                                      Batas</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Durasi Pengerjaan</span>
+                                    <span class="status">7 Hari</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Font Guidelines</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Color Guidelines</span>
+                                    <span class="status"><i class="fas fa-times"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Highres Quality</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Gratis Promosi Bisnis</span>
+                                    <span class="status"><i class="fas fa-times"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Master File Desain</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="main-features">
+                                      <ul>
+                                        <li>
+                                          <h6 class="h6">Garansi uang kembali</h6>
+                                          <i class="fas fa-check"></i>
+                                        </li>
+                                        <li>
+                                          <h6 class="h6">Pelayanan terbaik</h6>
+                                          <i class="fas fa-check"></i>
+                                        </li>
+                                        <li>
+                                          <h6 class="h6">Tidak ada biaya tambahan</h6>
+                                          <i class="fas fa-check"></i>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="card card-full fade" id="professional">
+                              <div class="card-header">
+                                <h1 class="card-title">Professional</h1>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <span class="name">Konsep Desain</span>
+                                    <span class="status">15</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Variasi Desain</span>
+                                    <span class="status">2</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Revisi Desain</span>
+                                    <span class="status" data-toggle="tooltip" data-replacement="top"
+                                      title="Selama 5 hari">Tanpa
+                                      Batas</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Durasi Pengerjaan</span>
+                                    <span class="status">10 Hari</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Font Guidelines</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Color Guidelines</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Highres Quality</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Gratis Promosi Bisnis</span>
+                                    <span class="status"><i class="fas fa-times"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Master File Desain</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="main-features">
+                                      <ul>
+                                        <li>
+                                          <h6 class="h6">Garansi uang kembali</h6>
+                                          <i class="fas fa-check"></i>
+                                        </li>
+                                        <li>
+                                          <h6 class="h6">Pelayanan terbaik</h6>
+                                          <i class="fas fa-check"></i>
+                                        </li>
+                                        <li>
+                                          <h6 class="h6">Tidak ada biaya tambahan</h6>
+                                          <i class="fas fa-check"></i>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="card card-full fade" id="expert">
+                              <div class="card-header">
+                                <h1 class="card-title">Expert</h1>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">
+                                    <span class="name">Konsep Desain</span>
+                                    <span class="status">25</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Variasi Desain</span>
+                                    <span class="status">3</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Revisi Desain</span>
+                                    <span class="status" data-toggle="tooltip" data-replacement="top"
+                                      title="Selama 7 hari">Tanpa
+                                      Batas</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Durasi Pengerjaan</span>
+                                    <span class="status">14 Hari</span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Font Guidelines</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Color Guidelines</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Highres Quality</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Gratis Promosi Bisnis</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <span class="name">Master File Desain</span>
+                                    <span class="status"><i class="fas fa-check"></i></span>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="main-features">
+                                      <ul>
+                                        <li>
+                                          <h6 class="h6">Garansi uang kembali</h6>
+                                          <i class="fas fa-check"></i>
+                                        </li>
+                                        <li>
+                                          <h6 class="h6">Pelayanan terbaik</h6>
+                                          <i class="fas fa-check"></i>
+                                        </li>
+                                        <li>
+                                          <h6 class="h6">Tidak ada biaya tambahan</h6>
+                                          <i class="fas fa-check"></i>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
               <div class="row justify-content-end align-items-center pt-4">
@@ -314,7 +546,7 @@
                   <div class="card">
                     <div class="card-header">
                       <h4 class="card-title">Basic</h4>
-                      <h1 class="card-price"><span>IDR</span>1<small>.000.000</small></h1>
+                      <h1 class="card-price"><span>IDR</span><small>700.000</small></h1>
                     </div>
                     <div class="card-body">
                       <ul class="list-group list-group-flush">
@@ -327,8 +559,8 @@
                           <span class="status">5</span>
                         </li>
                         <li class="list-group-item">
-                          <span class="name">Variasi Desain</span>
-                          <span class="status">1</span>
+                          <span class="name">Maksimal Halaman</span>
+                          <span class="status">5</span>
                         </li>
                         <li class="list-group-item">
                           <span class="name">Revisi Desain</span>
@@ -336,12 +568,16 @@
                             Batas</span>
                         </li>
                         <li class="list-group-item">
-                          <span class="name">Bantuan Prioritas</span>
-                          <span class="status"><i class="fas fa-times"></i></span>
+                          <span class="name">Durasi Pengerjaan</span>
+                          <span class="status">7 Hari</span>
                         </li>
                         <li class="list-group-item">
                           <span class="name">Master File Desain</span>
                           <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="full-portofolio" data-toggle="modal" data-target="FullWebsiteModal">Fitur
+                            Lainnya<i class="fas fa-chevron-circle-right"></i></span>
                         </li>
                       </ul>
                     </div>
@@ -351,7 +587,7 @@
                   <div class="card card-main">
                     <div class="card-header">
                       <h4 class="card-title">Professional</h4>
-                      <h1 class="card-price"><span>IDR</span>2<small>.000.000</small></h1>
+                      <h1 class="card-price"><span>IDR</span><small>1.000.000</small></h1>
                     </div>
                     <div class="card-body">
                       <ul class="list-group list-group-flush">
@@ -364,8 +600,8 @@
                           <span class="status">15</span>
                         </li>
                         <li class="list-group-item">
-                          <span class="name">Variasi Desain</span>
-                          <span class="status">2</span>
+                          <span class="name">Maksimal Halaman</span>
+                          <span class="status">10</span>
                         </li>
                         <li class="list-group-item">
                           <span class="name">Revisi Desain</span>
@@ -373,12 +609,16 @@
                             Batas</span>
                         </li>
                         <li class="list-group-item">
-                          <span class="name">Bantuan Prioritas</span>
-                          <span class="status"><i class="fas fa-times"></i></span>
+                          <span class="name">Durasi Pengerjaan</span>
+                          <span class="status">10 Hari</span>
                         </li>
                         <li class="list-group-item">
                           <span class="name">Master File Desain</span>
                           <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="full-portofolio" data-toggle="modal" data-target="FullWebsiteModal">Fitur
+                            Lainnya<i class="fas fa-chevron-circle-right"></i></span>
                         </li>
                       </ul>
                     </div>
@@ -388,7 +628,7 @@
                   <div class="card">
                     <div class="card-header">
                       <h4 class="card-title">Expert</h4>
-                      <h1 class="card-price"><span>IDR</span>3<small>.000.000</small></h1>
+                      <h1 class="card-price"><span>IDR</span><small>1.500.000</small></h1>
                     </div>
                     <div class="card-body">
                       <ul class="list-group list-group-flush">
@@ -401,8 +641,8 @@
                           <span class="status">25</span>
                         </li>
                         <li class="list-group-item">
-                          <span class="name">Variasi Desain</span>
-                          <span class="status">3</span>
+                          <span class="name">Maksimal Halaman</span>
+                          <span class="status">15</span>
                         </li>
                         <li class="list-group-item">
                           <span class="name">Revisi Desain</span>
@@ -410,20 +650,24 @@
                             Batas</span>
                         </li>
                         <li class="list-group-item">
-                          <span class="name">Bantuan Prioritas</span>
-                          <span class="status"><i class="fas fa-check"></i></span>
+                          <span class="name">Durasi Pengerjaan</span>
+                          <span class="status">14 Hari</span>
                         </li>
                         <li class="list-group-item">
                           <span class="name">Master File Desain</span>
                           <span class="status"><i class="fas fa-check"></i></span>
+                        </li>
+                        <li class="list-group-item">
+                          <span class="full-portofolio" data-toggle="modal" data-target="FullWebsiteModal">Fitur
+                            Lainnya<i class="fas fa-chevron-circle-right"></i></span>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal fade" id="WebsiteModal" tabindex="-1" role="dialog" aria-labelledby="WebsiteModalLabel"
-                aria-hidden="true">
+              <div class="modal modal-portofolio fade" id="WebsiteModal" tabindex="-1" role="dialog"
+                aria-labelledby="WebsiteModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -564,14 +808,11 @@
   </section>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  <script src="vendor/core/jquery.3.2.1.min.js">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  <script src="vendor/core/popper.min.js">
   </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  <script src="vendor/bootstrap-4/js/bootstrap.js">
   </script>
   <script src="js/brightjar.js"></script>
 
