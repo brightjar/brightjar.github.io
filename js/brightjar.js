@@ -21,14 +21,24 @@ $(document).ready(function () {
     }, 450 * 4);
   });
 
-  $('.menu .menu-carousel').click(function () {
+  $('.menu-des .menu-carousel').click(function () {
     var href_id = $(this).attr('data-menu');
 
-    $('.menu .menu-carousel').removeClass('active');
-    $('.card-full').removeClass('show');
+    $('.menu-des .menu-carousel').removeClass('active');
+    $('.menu-des ~ .card-full').removeClass('show');
 
     $(this).addClass('active');
-    $('.card-full' + "#" + href_id).addClass('show');
+    $('.menu-des ~ .card-full' + "#" + href_id).addClass('show');
+  });
+
+  $('.menu-web .menu-carousel').click(function () {
+    var href_id = $(this).attr('data-menu');
+
+    $('.menu-web .menu-carousel').removeClass('active');
+    $('.menu-web ~ .card-full').removeClass('show');
+
+    $(this).addClass('active');
+    $('.menu-web ~ .card-full' + "#" + href_id).addClass('show');
   });
 
 });

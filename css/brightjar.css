@@ -81,7 +81,7 @@ section {
 
 .modal-full-portofolio .modal-body .close {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .modal-full-portofolio .row {
@@ -97,6 +97,7 @@ section {
   border: 0;
   -webkit-box-shadow: 2px 6px 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 2px 6px 15px 0 rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 
 .card .card-header {
@@ -587,7 +588,8 @@ section {
   overflow: hidden;
 }
 
-.menu {
+.menu-des,
+.menu-web {
   position: absolute;
   top: 50%;
   left: 0;
@@ -605,7 +607,8 @@ section {
           justify-content: space-evenly;
 }
 
-.menu .menu-carousel {
+.menu-des .menu-carousel,
+.menu-web .menu-carousel {
   width: 10px;
   height: 10px;
   border-radius: 25px;
@@ -613,7 +616,8 @@ section {
   cursor: pointer;
 }
 
-.menu .menu-carousel.active {
+.menu-des .menu-carousel.active,
+.menu-web .menu-carousel.active {
   background-color: #2196f8;
 }
 
@@ -658,7 +662,7 @@ section {
   position: absolute;
   right: 50px;
   width: 600px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .contact-list li {
@@ -749,7 +753,7 @@ section {
   }
   .services .portofolio-desain,
   .services .portofolio-website {
-    padding: 0 50px;
+    padding: 50px;
   }
   .services .portofolio-desain ul li,
   .services .portofolio-website ul li {
