@@ -19,6 +19,11 @@ textarea {
   resize: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 section {
   width: 100vw;
   height: 100vh;
@@ -90,6 +95,17 @@ section {
 
 .modal-full-portofolio .row .col {
   padding: 0;
+}
+
+.modal-full-portofolio .gambar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  height: 100%;
 }
 
 .card {
